@@ -37,14 +37,14 @@
 
  //Question #2
  //Show me how to get an array of items that cost between $14.00 and $18.00 USD
- 
- 	items.filter(function(item){
- 		if(items.price >= 14 && items.price <= 18){
- 			return item;
- 			console.log(item);
+ 	
+ 	var itemRange = items.filter(function(item){
+ 		if(item.price >= 14 && item.price <= 18){
+ 			return item.title;
+ 			// console.log('item');
  		}
  	});
-
+// console.log('the object that meet defined criteria are ' + itemRange.title);
 
 
 
