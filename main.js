@@ -49,9 +49,15 @@
  //Question #2
  //Show me how to get an array of items that cost between $14.00 and $18.00 USD
  	var itemRange = items.filter(function(price_range){
- 		return price_range.price >= 14 && price_range.price <= 18;
+ 		return (price_range.price > 14 && price_range.price < 18 && price_range.currency_code === 'USD');
  	});
- 	console.log(itemRange);
+ 		console.log("Items that cost between $14.00 USD and $18.00 USD:")
+ 		itemRange.forEach(function(item){
+ 		console.log("");
+ 		console.log(item.title);
+ 	});
+ 		
+
 
 //  	function isBigEnough(element) {
 //   return element >= 10;
@@ -73,32 +79,27 @@
  	
  		return isGbp.currency_code === 'GBP';
  	});
-		console.log(gbpItem);
+		console.log('question 3');
 
 
 //Question #4
 // Show me how to find which items are made of wood. 
 //Please console.log the ones you find.
 
- var getMaterial;
- var finalWood;
+ 
 
- var woodItem = items.filter(function(isWood){
- 	getMaterial = isWood.materials; 
- 		getMaterial.filter(function(justWood){
- 			finalWood = justWood.wood;
- 				// if (finalWood === 'wood'){
- 				// 	console.log("got wood!");
-				//  }
-				// console.log('no way!');
-				// console.log(justWood);
-				if (justWood === 'wood'){
- 			  	return finalWood;
- 					console.log(finalWood);
- 				}//if statement close brace
- 		});//getMaterial array close brace
+ //var woodItem = items.filter(function(isWood){
+ //	return isWood;
+ 		//var justWood isWood.filter(function(justItem){
+ 			// return
+ 				
+				// if (justWood === 'wood'){
+ 			//   	return finalWood;
+ 			// 		console.log(finalWood);
+ 			//	}//if statement close brace
+ 	//	});//getMaterial array close brace
  	
- });//items array close brace
+// });//items array close brace
 // console.log(justWood);
 
 
