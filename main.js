@@ -78,23 +78,35 @@
 //Please console.log the ones you find.
 
  var woodWood = items.filter(function(isWood){
- 		console.log(isWood.materials);
- 			
-
  		return isWood.materials.indexOf('wood') > 0;
- 	
  		});
 
  	woodWood.forEach(function(item){
 			console.log(item.title);
 		});
 
+
+
+console.log("#");
 //Question #5
 //Show me how to find which items are made of eight or more materials. 
 //Please console.log the ones you find.
+console.log('Question #5')
+var totalMats = items.filter(function(isTotal){
+ 		console.log(isTotal.materials);
+ 			
+
+ 		return isTotal.materials.length >= 8;
+ 	
+ 		});
+
+totalMats.forEach(function(item){
+	console.log(item.title, item.materials);
+});
 
 
-//Question #5
+
+//Question #6
 //Show me how to calculate how many items were made by their sellers
 
 	
