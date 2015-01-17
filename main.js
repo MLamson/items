@@ -105,11 +105,18 @@ totalMats.forEach(function(item){
 });
 
 
-
+console.log("");
 //Question #6
 //Show me how to calculate how many items were made by their sellers
+console.log('Question #6');
+console.log("");
 
-	
+var whoMade = items.filter(function(iMade){
+	return iMade.who_made === 'i_did';
+
+});
+	// console.log(whoMade);
+	console.log(whoMade.length, ' were made by their sellers');
  
 
 
