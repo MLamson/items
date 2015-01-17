@@ -48,7 +48,16 @@ function maxOfThree(a,b,c){
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
 
-function isVowel(char){
+function isVowel(inputChar){
+    if (inputChar === 'a' || inputChar === 'e' || inputChar === 'i' || inputChar === 'o' || inputChar === 'u'){
+        console.log(true);
+    }
+    else if(inputChar === 'y'){
+        console.log('both');
+    }
+    else {
+        console.log(false);
+    }
     //...
 }
 
