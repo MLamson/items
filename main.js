@@ -56,17 +56,6 @@
  		console.log("");
  		console.log(item.title);
  	});
- 		
-
-
-//  	function isBigEnough(element) {
-//   return element >= 10;
-// }
-// var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
-// filtered is [12, 130, 44]
-
-
-// console.log('the object that meet defined criteria are ' + itemRange.title);
 
 
 //Question #3
@@ -79,29 +68,26 @@
  	
  		return isGbp.currency_code === 'GBP';
  	});
-		console.log('question 3');
+
+ // console.log(gbpItem.currency_code);
+		
 
 
 //Question #4
 // Show me how to find which items are made of wood. 
 //Please console.log the ones you find.
 
- 
+ var woodWood = items.filter(function(isWood){
+ 		console.log(isWood.materials);
+ 			
 
- //var woodItem = items.filter(function(isWood){
- //	return isWood;
- 		//var justWood isWood.filter(function(justItem){
- 			// return
- 				
-				// if (justWood === 'wood'){
- 			//   	return finalWood;
- 			// 		console.log(finalWood);
- 			//	}//if statement close brace
- 	//	});//getMaterial array close brace
+ 		return isWood.materials.indexOf('wood') > 0;
  	
-// });//items array close brace
-// console.log(justWood);
+ 		});
 
+ 	woodWood.forEach(function(item){
+			console.log(item.title);
+		});
 
 //Question #5
 //Show me how to find which items are made of eight or more materials. 
