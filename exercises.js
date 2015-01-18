@@ -146,9 +146,55 @@ function filterLongWords(words, i){
 }// function close brace
 
 // ---------------------
-// Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
+// Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. 
+//Represent the frequency listing as a Javascript object. Try it with something 
+//like charFreq("abbabcbdbabdbdbabababcbcbab").
 // ---------------------
+    var aCounter = 0;
+    var bCounter = 0;
+    var cCounter = 0;
+    var tempText = '';
 
-function charFreq(string){
-    //...
-}
+function charFreq(stringInput){
+    for(var i=0; i < stringInput.length; i++){ 
+        tempText = stringInput.charAt(i);
+
+        if(tempText === 'a'){
+            aCounter++;  
+        }
+        else if(tempText === 'b'){
+            bCounter++;  
+        }
+        else if(tempText === 'c'){
+            cCounter++;  
+        }   
+}//for loop close brace
+console.log("the number of times 'a' is in the word: ", aCounter);
+console.log("the number of times 'b' is in the word: ", bCounter);
+console.log("the number of times 'c' is in the word: ", cCounter);
+
+var myObject = {a:aCounter, b:bCounter, c:cCounter};
+
+console.log(myObject);
+    
+}//function close brace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
