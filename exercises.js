@@ -108,16 +108,26 @@ function multiply(numToMult){
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse(textInput){
+    var userInput = '';
+    for (var i = textInput.length - 1; i >=0; i--)
+        userInput += textInput[i];
+    return userInput;
 }
 
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
-
+    var curLong = '';
+    var wordLength = '';
 function findLongestWord(words){
-    //...
+    words.forEach(function(wordList){
+         wordLength = wordList.length;
+        if (wordLength > curLong){
+            curLong = wordLength;
+        }
+    });
+    console.log(curLong);
 }
 
 // ---------------------
